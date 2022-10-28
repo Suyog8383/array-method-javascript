@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  console.log("map()= ");
+  const arr = [4, 9, 15, 26];
+  const newArr = arr.map((num) => num * 2);
+  console.log("@SN ", newArr);
+
+  const newArr1 = arr.map(findMul);
+  function findMul(num) {
+    return num * 2;
+  }
+  console.log("@SN ", newArr1);
+
+  console.log("filter()= ");
+  const arr2 = [19, 20, 10, 14, 60];
+  const newArr2 = arr2.filter(filterElm);
+  function filterElm(num) {
+    return num > 18;
+  }
+  console.log("@SN ", newArr2);
+
+  console.log("some()= ");
+  const arr3 = [10, 12, 25, 16];
+  const newArr3 = arr3.some(filterElm);
+  function filterElm(num) {
+    return num > 18;
+  }
+  console.log("@SN ", newArr3);
+
+  console.log("find()= ");
+  const arr4 = [10, 12, 34, 25, 16];
+  const newArr4 = arr4.find(filterElm);
+  function filterElm(num) {
+    return num > 18;
+  }
+  console.log("@SN ", newArr4);
+
+  console.log("findIndex()= ");
+  const arr5 = [10, 12, 34, 25, 16];
+  const newArr5 = arr5.findIndex(filterElm);
+  function filterElm(num) {
+    return num > 18;
+  }
+  console.log("@SN ", newArr5);
+
+  console.log("indexOf()= ");
+  const arr6 = [10, 12, 34, 25, 16];
+  const newArr6 = arr6.indexOf(34);
+  console.log("@SN ", newArr6);
+</script>
